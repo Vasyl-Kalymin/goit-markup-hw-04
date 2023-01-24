@@ -24,8 +24,8 @@
 
 /*Базові стилі*/
 body{
-    font-family: var(--main-font);
     color: var(--dark-color);
+    font-family: var(--main-font);
     
 }
 
@@ -46,8 +46,8 @@ body{
 /*Загальний контейнер щоб обмежити вміст по ширині*/
 .container {
     width: 1158px;
-    padding: 0 15px;
     margin: 0 auto;
+    padding: 0 15px;
     /*outline: 2px solid red;
     outline-offset: -2px;*/
 }
@@ -73,8 +73,8 @@ ul {
 
 /*забираємо підкреслення посилань*/
 .link{
-    text-decoration: none;
     color: currentColor;
+    text-decoration: none;
 }
 
 /*Задаємо зображенням Display-block*/
@@ -87,15 +87,15 @@ ul {
 /*Робимо невидимі заголовки*/
 .visually-hidden{
     position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
     width: 1px;
     height: 1px;
     margin: -1px;
-    border: 0;
     padding: 0;
+    border: 0;
     white-space: nowrap;
     clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
 }
 
 /*Додаємо Card set*/
@@ -120,13 +120,13 @@ ul {
 }
 
 .logo{
-    font-family: 'Raleway';
+    margin-right: 76px;
     font-weight: 800;
     font-size: 18px;
+    font-family: 'Raleway';
     line-height: 1.33;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    margin-right: 76px;
 }
 
 .logo-color{
@@ -167,23 +167,23 @@ ul {
 
 .header-contact-ul {
     display: flex;
-    align-items: center;
     gap: 40px;
+    align-items: center;
 }
 
 .header-contact{
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: var(--text-color);
     display: block;
     padding-top: 24px;
     padding-bottom: 24px;
+    color: var(--text-color);
+    line-height: 1.5;
+    letter-spacing: 0.02em;
 }
 
 .header-contact:hover,
 .header-contact:focus{
-    outline: none;
     color: var(--pressed-state-color);
+    outline: none;
 }
 
 
@@ -199,41 +199,41 @@ ul {
 }
 
 .hero-title{
+    width: 496px;
+    margin-right: auto;
+    margin-bottom: 48px;
+    margin-left: auto;
+    color: var(--white-color);
     font-size: 56px;
     line-height: 1.07;
-    text-align: center;
     letter-spacing: 0.02em;
-    color: var(--white-color);
-    width: 496px;
-    margin-bottom: 48px;
-    margin-right: auto;
-    margin-left: auto;
+    text-align: center;
 }
 
 .hero-btn{
     display: block;
+    width: 169px;
+    height: 56px;
+    margin-right: auto;
+    margin-left: auto;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--primary-brand-color);
+    color: var(--white-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
     cursor: pointer;
-    border: none;
-    width: 169px;
-    height: 56px;
-    color: var(--white-color);
-    background-color: var(--primary-brand-color);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    margin-right: auto;
-    margin-left: auto;
 }
 
 .hero-btn:hover,
 .hero-btn:focus{
-    outline: none;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16),
     0px 2px 1px rgba(46, 47, 66, 0.08);
+    outline: none;
 }
 
 .hero-btn:active{
@@ -243,27 +243,27 @@ ul {
 
 /*стилізація секції переваги*/
 .features-title{
+    margin-bottom: 8px;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    margin-bottom: 8px;
 }
 
 .features-text{
+    color: var(--text-color);
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: var(--text-color);
 }
 
 /*стилізація секції що ми робимо*/
 .profile-team-title{
+    margin-bottom: 72px;
     font-size: 36px;
     line-height: 1.11;
-    text-align: center;
     letter-spacing: 0.02em;
+    text-align: center;
     text-transform: capitalize;
-    margin-bottom: 72px;
 }
 
 .profile-img {
@@ -276,28 +276,28 @@ ul {
 }
 
 .team-item{
+    border-radius: 0px 0px 4px 4px;
     background-color: var(--white-color);
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-    border-radius: 0px 0px 4px 4px;
 }
 
 .team-container {
-    text-align: center;
     padding: 32px 16px;
+    text-align: center;
 }
 
 .team-hero{
+    margin-bottom: 8px;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    margin-bottom: 8px;
 }
 
 .team-text{
+    color: var(--text-color);
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: var(--text-color);
 }
 
 /*стилізація футеру*/
@@ -319,20 +319,20 @@ ul {
 }
 
 .footer-text{
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color:var(--accent-color);
     width: 264px;
     margin-top: 16px;
+    color:var(--accent-color);
+    line-height: 1.5;
+    letter-spacing: 0.02em;
 }
 
 
 /*Стилізація Портфоліо*/
 .portfolio-btn-list{
     display: flex;
+    gap: var(--indent);
     justify-content: center;
     margin-bottom: 72px;
-    gap: var(--indent);
 }
 
 .portfolio-btn.current{
@@ -341,23 +341,23 @@ ul {
 }
 
 .portfolio-btn{
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    font-family: inherit;
-    cursor: pointer;
-    letter-spacing: 0.04em;
-    color: var(--primary-brand-color);
-    background: var(--light-color);
+    padding: 12px 24px;
     border: 1px solid #E7E9FC;
     border-radius: 4px;
-    padding: 12px 24px;
+    background: var(--light-color);
+    color: var(--primary-brand-color);
+    font-weight: 500;
+    font-size: 16px;
+    font-family: inherit;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    cursor: pointer;
 }
 
 .portfolio-btn:hover,
 .portfolio-btn:focus{
-    color: var(--white-color);
     background:var(--pressed-state-color) ;
+    color: var(--white-color);
 }
 
 .portfolio-btn:active{
@@ -379,15 +379,15 @@ ul {
 }
 
 .work-title{
+    margin-bottom: 8px;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    margin-bottom: 8px;
 }
 
 .work-text{
+    color: var(--text-color);
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: var(--text-color);
 }
