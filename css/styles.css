@@ -192,13 +192,13 @@ ul {
 /*Стилізація головної секції*/
 .hero{
     max-width: 1440px;
-    margin-left: auto;
     margin-right: auto;
+    margin-left: auto;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), 
     rgba(46, 47, 66, 0.7)),
     url(../images/people-office.jpg);
-    background-repeat: no-repeat;
     background-position: center;
+    background-repeat: no-repeat;
 
 }
 
@@ -330,12 +330,12 @@ ul {
 
 .social-link{
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     width: 40px;
     height: 40px;
-    background-color: var(--primary-brand-color);
     border-radius: 50%;
+    background-color: var(--primary-brand-color);
     fill: var(--light-color);
 }
 
@@ -364,8 +364,8 @@ ul {
 
 .customer-link:hover,
 .customer-link:focus{
-    color: var(--pressed-state-color);
     border-color: var(--pressed-state-color);
+    color: var(--pressed-state-color);
 }
 
 .customer-icon{
